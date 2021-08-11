@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify User</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="container l-container">
+        <div class="small-container verify-container ">
+            <div class="verify-c-div">
+                <div class="left-verify">
+                    <div class="video-stream">
+                        <video id="video" width="400" height="400" autoplay></video>
+                        <canvas id="canvas" width="400" height="400"></canvas>
+
+                    </div>
+                </div>
+
+                <div class="right-verify">
+                    <h1>Here by you are giving permission to access your web camera.</h1>
+                <ul>
+                    <li>1. It will live stream during the exam.</li>
+                    <li>2. Click on verify to capture your image for the security purpose.</li>
+                    <li>3. You can't skip this.</li>
+                </ul>
+                </div>
+                
+            </div>
+            <input type="checkbox" id="snap" onclick="snapPic()">
+            <label for="check" >Check this for verifying you</label>
+            <a href="instruction.html" class="btn login-btn" id="verify-btn">Verify</a>
+        </div>
+    </div>
+
+    <script src="Java Script/verify.js"></script>
+</body>
+</html>

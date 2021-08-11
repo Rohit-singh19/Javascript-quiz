@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="container quiz-container">
+        <div class="small-container grid-1">
+            <div class="logo"><img src="Images/logo.png" alt="Not found"></div>
+            <div class="quiz-heading">
+                <h1 id="examPinx"></h1>
+                <h2 id="namex"></h2>
+            </div>
+            <div class="time">
+                <div id="countdown">
+                </div>
+                <button type="submit" id="end-test" class="btn end-btn" >End test</button>
+                <!-- <div class="btn end-btn" id="end"> End test</div> -->
+            </div>
+        </div>
+        <div class="small-container grid-2" id="grid_2">
+            <div class="question-container" id="quiz">
+                <h2><span id="question">Question</span></h2>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer"> <label id="a_text" for="a">Option</label> 
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer"> <label id="b_text" for="b">Option</label> 
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer"> <label id="c_text" for="c">Option</label> 
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="d" class="answer"> <label id="d_text" for="d">Option</label> 
+                        </li>
+                    </ul>
+                </div>
+                
+        </div>
+        <div class="small-container grid-3">
+            <!-- <div class="links"></div> -->
+            <div id="grid_3"></div>
+        </div>
+        <div class="small-container grid-4">
+            <div class="left-btns">
+                <button type="submit" onclick="index(-1)" id="prev" class="btn">Prev</button>
+                <button type="submit" onclick="index(1)" id="next" class="btn">Next</button>
+                <!-- <button type="submit" id="submit" class="btn">Submit</button> -->
+            </div>
+            <div class="right-btns">
+                <button type="submit" id="mor" class="btn">Mark for review</button>
+            </div>
+        </div>
+    </div>
+    <script src="Java Script/script.js"></script>
+</body>
+</html>

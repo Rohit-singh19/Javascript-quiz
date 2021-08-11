@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+
+
+
+/* ---------------one for all--------------- */
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 40px;
+    background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+.container::after{
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+.small-container {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    z-index: 1000;
+}
+
+
+/* -----------buttons---------------- */
+
+.btn{
+    padding: 10px 40px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* ---------------unique----------------------- */
+
+
+/* -------------index html---------------------- */
+.l-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    padding: 40px 60px;
+    min-width: 80%;
+    max-width: 100%;
+    height: 60vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.left-login,.right-login{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.right-login form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.left-login{
+    border-right: 1px solid black;
+}
+.left-login img{
+    width: 50%;
+}
+
+.exam-heading{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.login-btn{
+    width: 296px;
+    margin-top: 1.5rem;
+    background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC  51%, #FC354C  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;         
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    
+}
+.login-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+  }
+
+
+
+
+
+  /* -----------quiz-container------------ */
+
+
+.quiz-container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 0.5fr;
+    grid-gap: 50px 50px;
+}
+
+
+.grid-1, .grid-4{
+    grid-column: 1/-1;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4{
+    padding: 0 20px;
+}
+
+.grid-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quiz-heading {
+    text-align: center;
+}
+.quiz-heading h1{
+    margin-bottom: 30px;
+}
+
+.quiz-heading h2{
+    margin-top: 10px;
+}
+
+.time{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time div{
+    margin-right: 20px;
+}
+
+
+.end-btn{
+    background: rgb(233, 32, 32);
+    
+}
+.end-btn:hover{
+    background: red;
+}
+
+/* ---------grid-2--------------- */
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-2{
+    padding: 20px 40px;
+
+}
+
+.question-container h2{
+    margin-bottom: 2rem;
+}
+.question-container ul li{
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    padding: 1.5rem ;
+
+}
+.question-container ul li:hover{
+    border: 1px solid green;
+}
+
+
+/* ---------grid-3--------------- */
+
+.grid-3{
+    padding: 2rem 1.5rem;
+}
+
+#grid_3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.links{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+}
+
+.color-links{
+    background-color: green;
+    color: white;
+}
+
+
+/* ---------grid-4--------------- */
+
+.grid-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-btns button{
+    margin: 0 2rem 0 1.5rem;
+}
+
+
+/* -------------btn------------------- */
+
+
+#prev, #next{
+    background-color: aqua;
+}
+
+#prev:hover, #next:hover{
+    background-color: rgb(77, 138, 138);
+}
+
+#mor{
+    background-color: rgb(243, 243, 0);
+}
+
+
+
+/* ----------------------result----------------------- */
+
+.reload-btn{
+    background-color: green;
+    color: white;
+}
+
+.reload-btn:hover{
+    background-color: rgb(83, 243, 83);
+}
+
+
+
+
+/* ---------------verify html--------------------------- */
+
+.verify-container{
+    width: 80%;
+    height: 80vh;
+    padding: 2rem;
+}
+
+.verify-c-div{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+}
+
+
+.video-stream{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.left-verify, .right-verify{
+    width: 45%;
+}
+
+.video-stream video , .video-stream canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hidecanvas{
+    display: none;
+}
+
+.right-verify h1{
+    font-size: 1.5rem;
+}
+
+.right-verify ul li{
+    margin: 2rem 0;
+    list-style: none;
+}
+
+
+
+
+/* ------------------------instruction html------------------- */
+
+
+.i-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ins-container{
+    padding: 3rem;
+    width: 60%;
+    height: 60vh;
+}
+
+.ins-container p{
+    margin: 2rem .5rem;
+}
+
+
+.pbtn{
+    cursor: not-allowed;
+}
+
+/* -------------------login html---------- */
+
+
+.heading{
+    font-size: 1.5rem;
+}
+
+.heading a{
+    text-decoration: none;
+}
+.heading a:hover{
+    color: blueviolet;
+}
+.heading span{
+    color: blue;
+}
+
+
+/* -----------------Sign up---------------------- */
+
+
+.signup-container{
+    height: 80vh;
+}
+
+
+
+
+.form {
+	padding: 30px 0;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 1.5rem;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
